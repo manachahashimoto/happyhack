@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Hack</title>
+    <link rel = "stylesheet"   href="style.css">
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/slick.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="./css/slick-theme.css" media="screen" />
+<script src="particles.min.js"></script>
+<script src="app.js"></script>
+</head>
+
+<body>
+ <div class="mainvisual">  
+    <div id="header">
+         <div class="logo">
+              <img src="logo.png" alt="">
+              <p>We are Web Designers.</p>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="#introduction">Introduction</a></li>
+                  <li><a href="#courses">Courses</a></li>
+                  <li><a href="#images">Images</a></li>
+                  <li><a href="#access">Access</a></li>
+              </ul>
+          </nav>
+        
+    </div> 
+</div>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.bgswitcher.js"></script>  
+   <script>   
+      jQuery(function($) {
+    $('.mainvisual').bgSwitcher({
+        images: ["background2.jpg", "background3.jpg", "background4.jpg", "background5.jpg"], 
+        interval: 2000, 
+        loop: true, 
+        shuffle: true, 
+        effect: "blind",
+        duration: 500, 
+        easing: "swing"
+    });
+});
+    </script>
+   
+<div class="wrapper">
+  <section id="intro">
+   <h1>Introduction</h1>
+   
+    <div id="introduction">    
+    <div class="leftbox">
+        <img src="introduction_001.jpg">
+    </div>
+    <div class="rightbox">
+        <p>
+            Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
+            特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
+            誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。
+            <a class="button" href="">会員登録</a>
+        </p>
+    </div>  
+    </div>
+    
+    <div id="introduction2">   
+    <div class="leftbox"> 
+        <p>
+            Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
+            自分の想いをカタチカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
+        </p>
+            <a class="button" href="">会員登録</a>
+    </div>
+    
+    <div class="rightbox">
+        <img src="introduction_002.jpg">
+    </div>
+    
+    </div>
+    </section>
+    
+    <section id="courses">
+       
+       <div id="particles-js">
+           
+       </div>
+       <h1>Courses</h1>
+    <section class="courses">
+       <div class="coursebox">
+        <div class="whitebox" id="html">
+           <div class="courseimg">
+            <img src="html.png">
+            <h3>HTMLコース</h3>
+            </div>
+            <a class="button" href="#courses">このコースを受ける</a>
+        </div>
+        
+        <div class="whitebox" id="css">
+           <div class="courseimg">
+            <img src="css.png">
+            <h3>CSSコース</h3>
+           </div>
+            <a class="button" href="#courses">このコースを受ける</a>
+        </div>
+        
+        <div class="whitebox" id="unity">
+           <div class="whitaboximg">
+           <div class="courseimg">
+            <img src="unity.png">
+            <h3>Unityコース</h3>
+            </div>
+            </div>
+            <a class="button" href="#courses">このコースを受ける</a>
+        </div>
+        
+        <div class="whitebox" id="ruby">
+           <div class="courseimg">
+            <img src="ruby.png">
+            <h3>Rubyコース</h3>
+            </div>
+            <a class="button" href="#courses">このコースを受ける</a>
+        </div>
+        
+        <div class="whitebox" id="js">
+           <div class="courseimg">
+            <img src="js.png">
+            <h3>JavaScriptコース</h3>
+            </div>
+            <a class="button" href="#courses">このコースを受ける</a>
+        </div>
+        
+        <div class="whitebox" id="swift">
+           <div class="courseimg">
+            <img src="swift.png">
+            <h3>Swiftコース</h3>
+            </div>
+            <a class="button" href="#courses">このコースを受ける</a>
+        </div>
+        
+        <div class="whitebox" id="go">
+           <div class="courseimg">
+            <img src="go.png">
+            <h3>Goコース</h3>
+            </div>
+            <a class="button" href="#courses">このコースを受ける</a>
+        </div>
+        </div>
+    </section>
+    </section>
+    
+    <section id="images">
+        <h1>Images</h1>
+         <div class="slick-box">
+    <div><img src="background2.jpg"></div>
+    <div><img src="background3.jpg"></div>
+    <div><img src="background4.jpg"></div>
+    <div><img src="background5.jpg"></div>
+  </div>
+  
+  <script type="text/javascript">
+$(function() {
+	$('.slick-box').slick();
+    infinite: true;
+    slidesToShow: 4,
+    slidesToScroll: 4,
+});
+</script>
+   
+    </section>
+    
+    <section id="access">
+      <h1>Access</h1>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3131287759843!2d135.4902599148962!3d34.69728128043536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1600741954629!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+    </section>
+    
+    <footer>&copy;2019 Happy Hack Inc.</footer>
+</div>
+    
+</body>
+</html>

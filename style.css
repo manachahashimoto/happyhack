@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: "Futura";
+    src: url("Futura-Med.ttf");
+}
+
+#header{
+    width: 100%;
+    overflow: hidden;
+}
+
+#header a{
+    color: #fff;
+    font-size: 
+}
+
+.mainvisual{
+    width: 100%;
+    height: 672px;
+    background: url(background2.jpg) 0 0 no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border-style: none;
+    overflow: hidden;
+}
+
+nav{
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    padding: 30px 15px 0;
+    color: #fff;
+    transition: 0.5s;
+    font-family: Futura;
+    font-size: 20pt;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    padding: 30px 15px 0;
+    color: #fff;
+    transition: 0.5s;
+    font-family: Futura;
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+nav a:hover{
+    color: #3d5cdb;
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+    float: left;
+    color: #fff;
+}
+
+ul{
+    overflow: hidden;
+    margin: 0px 50px;
+}
+
+inframe{
+    margin: 0 auto;
+}
+
+body{
+    font-family: Futura, "Hirago KakuGothic Pro", sans-serif;
+    font-feature-settings: "palt" 1;
+}
+
+#introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; 
+    overflow: hidden;
+}
+
+#introduction2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; 
+}
+
+#introduction img{
+    width: 500px;
+    object-fit: contain;
+    float: left;
+}
+
+#introduction2 img{
+    width: 500px;
+    object-fit: contain;
+    float: left;
+}
+
+.rightbox p{
+    display: block;
+    float: left;
+    width: 400px;
+    margin: 35px auto 20px;
+}
+
+.leftbox p{
+    display: block;
+    width: 400px;
+    margin: 35px auto 20px;
+}
+
+section{
+    width: 100%;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+    color: #3d5cdb;
+}
+
+.wrapper{
+    display: block;
+}
+
+footer{
+    color: #3d5cdb;
+    text-align: center;
+    font-size: 16px; 
+    height: 60px;
+    font-weight: 300;
+    line-height: 60px;
+    font-family: Futura;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img{
+    width: 900px;
+    margin: auto;
+}
+
+.logo p{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    font-family: Futura;
+    font-style: italic;
+    font-weight: 100;
+}
+
+#courses{
+    background-color: #bad5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+#courses img{
+    width: 100px;
+    margin: auto;
+    position: absolute;
+    object-fit: contain;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.courseimg{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.coursebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.whitebox{
+    width: 180px;
+    height: 280px;
+    background-color: #ffffff;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(106,137,152,0.2);
+}
+
+.whitebox h3{
+    font-size: 11pt;
+    text-align: center;
+    margin: 10px;
+    padding-top: 20px;
+    color: #183c61;
+    display: block;
+}
+
+.whitebox a{
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+    width: 170px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*
+.whitebox img{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+*/
+
+#html a{
+    background-color: #f16529;
+}
+
+#css a{
+    background-color: #29a9df;
+}
+
+#unity a{
+    background-color: #333333;
+}
+
+#ruby a{
+    background-color: #ff5252;
+}
+
+#js a{
+    background-color: #fed700;
+}
+
+#swift a{
+    background-color: #fe7536;
+}
+
+#go a{
+    background-color: #73cede;
+}
+
+#access{
+    align-items: center;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightbox a{
+    padding: 8px 32px;
+    background: #3d5cdb; 
+    color: #fff;
+    border: 1px solid #3d5cdb;
+    border-radius: 12px;
+    text-decoration: none;
+    display: block;
+    margin: 30px auto;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.leftbox a{
+    padding: 8px 32px;
+    background: #ffbf00; 
+    color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    display: block;
+    margin: 30px auto;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.button a:hover{
+    
+}
+
+.rightbox{
+    width: 500px;
+    margin: 20px;
+    line-height: 2;
+}
+
+.leftbox{
+    width: 500px;
+    margin: 20px;
+    line-height: 2;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: -1;
+}
+
+.courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bx-wrapper{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#images  img{
+    width: 267px;
+    float: left;
+}
