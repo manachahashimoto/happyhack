@@ -8,6 +8,27 @@
     src: url("Futura-Med.ttf");
 }
 
+.fuwatAnime {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1.5s;
+ -ms-animation-duration:1.5s;
+ animation-duration:1.5s;
+ -webkit-animation-name: fuwatAnime;
+ -ms-animation-name: fuwatAnime;
+ animation-name: fuwatAnime;
+ visibility: visible !important;
+}
+@-webkit-keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
 #header{
     width: 100%;
     overflow: hidden;
@@ -21,7 +42,6 @@
 .mainvisual{
     width: 100%;
     height: 672px;
-    background: url(background2.jpg) 0 0 no-repeat;
     background-size: cover;
     top: 0;
     left: 0;
@@ -31,15 +51,14 @@
 }
 
 nav{
+    text-decoration: none;
     overflow: hidden;
     display: block;
-    text-decoration: none;
     padding: 30px 15px 0;
     color: #fff;
     transition: 0.5s;
-    font-family: Futura;
+    font-family: "Futura";
     font-size: 20pt;
-    font-weight: 300;
     position: absolute;
     top: 0;
     right: 0;
@@ -52,17 +71,15 @@ nav a{
     padding: 30px 15px 0;
     color: #fff;
     transition: 0.5s;
-    font-family: Futura;
+    font-family: "Futura";
     font-size: 20pt;
-    font-weight: 300;
 }
 
 nav a:hover{
-    color: #3d5cdb;
-    text-decoration: none;
+    color:#3d5cdb !important;
 }
 
-ul li{
+#header ul li{
     list-style-type: none;
     float: left;
     color: #fff;
@@ -78,7 +95,7 @@ inframe{
 }
 
 body{
-    font-family: Futura, "Hirago KakuGothic Pro", sans-serif;
+    font-family: "Futura", "Hirago KakuGothic Pro", sans-serif;
     font-feature-settings: "palt" 1;
 }
 
@@ -114,12 +131,14 @@ body{
     float: left;
     width: 400px;
     margin: 35px auto 20px;
+    font-family: "Hirago KakuGothic Pro", sans-serif;
 }
 
 .leftbox p{
     display: block;
     width: 400px;
     margin: 35px auto 20px;
+    font-family: "Hirago KakuGothic Pro", sans-serif;
 }
 
 section{
@@ -143,9 +162,8 @@ footer{
     text-align: center;
     font-size: 16px; 
     height: 60px;
-    font-weight: 300;
     line-height: 60px;
-    font-family: Futura;
+    font-family: "Futura";
 }
 
 .logo{
@@ -165,9 +183,8 @@ footer{
     text-align: center;
     margin-top: 30px;
     color: #fff;
-    font-family: Futura;
+    font-family: "Futura";
     font-style: italic;
-    font-weight: 100;
 }
 
 #courses{
@@ -181,7 +198,6 @@ footer{
 #courses img{
     width: 100px;
     margin: auto;
-    position: absolute;
     object-fit: contain;
     top: 0;
     bottom: 0;
@@ -203,7 +219,7 @@ footer{
     justify-content: center;
     margin-bottom: 50px;
     flex-wrap: wrap;
-    max-width: 1200px;
+    width: 1200px;
 }
 
 .whitebox{
@@ -216,7 +232,7 @@ footer{
     padding: 30px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 1px 3px rgba(106,137,152,0.2);
+    box-shadow: 0 1px 3px #eeeeee;
 }
 
 .whitebox h3{
@@ -226,6 +242,7 @@ footer{
     padding-top: 20px;
     color: #183c61;
     display: block;
+    font-family: "Hirago KakuGothic Pro", sans-serif;
 }
 
 .whitebox a{
@@ -324,7 +341,7 @@ footer{
 }
 
 .button a:hover{
-    
+    box-shadow: 3px 3px 3px #eeeeee;
 }
 
 .rightbox{
@@ -337,18 +354,6 @@ footer{
     width: 500px;
     margin: 20px;
     line-height: 2;
-}
-
-#particles-js{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    z-index: -1;
 }
 
 .courses{
@@ -364,6 +369,48 @@ footer{
 }
 
 #images  img{
-    width: 267px;
+    width: 290px;
     float: left;
+    display: block;
+    text-align: center;
+}
+
+.slick-box{
+    width: 1160px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slick-prev{
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-next{
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+button{
+    color: #333333;
+}
+
+#particles{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
