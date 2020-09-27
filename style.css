@@ -340,8 +340,16 @@ footer{
     font-weight: bold;
 }
 
-.button a:hover{
-    box-shadow: 3px 3px 3px #eeeeee;
+.rightbox a:hover{
+    box-shadow: 0 0 10px 10px #eeeeee;
+}
+
+.leftbox a:hover{
+    box-shadow: 0 0 10px 10px #eeeeee;
+}
+
+.whitebox a:hover{
+    box-shadow: 0 0 10px 10px #eeeeee;
 }
 
 .rightbox{
